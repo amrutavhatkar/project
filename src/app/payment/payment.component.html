@@ -1,0 +1,36 @@
+<div class="container" style="text-align: center;">
+<div>
+    <label for="cashOnDelivery">Cash On Delivery&nbsp;&nbsp;&nbsp;</label>
+    <input type="radio" id="cashOnDelivery" name="payment" value="cashOnDelivery">
+<br><br><br>
+
+    <label for="netBanking">Net Banking&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <input type="radio" id="netBanking" name="payment" value="netBanking">
+    <br><br><br>
+        <label for="upi">UPI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="radio" id="upi" name="payment" value="upi">
+        <br><br><br>
+        <label for="upi">Delivery Time&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <div class="btn-group">
+                <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Time Slot
+                </button>
+                <ul class="dropdown-menu">
+                  <li>1am-2am</li>
+                  <li>2am-3am</li>
+                </ul>
+              </div>
+        
+    </div><br><br>
+    <div>
+    <label for="location">Enter your location for delivery:</label><br><br>
+    <input type="text" name="payment" id="location" >
+    <br><br>
+    <div>
+        <!-- <input type="button" value="Order Placed" > -->
+        <button class="btn btn-light" type="submit" (click)="orderplaced()">place order</button>
+    </div>
+</div>
+</div>
